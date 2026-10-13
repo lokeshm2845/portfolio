@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lokesh Magare — Full-Stack Developer & Civic-Tech Builder</title>
+<meta name="description" content="Portfolio of Lokesh Magare — Full-Stack Developer, AI enthusiast and civic-tech builder. India Innovates 2026 Top 15 finalist.">
+<meta name="theme-color" content="#07070d">
+<meta property="og:title" content="Lokesh Magare — Portfolio">
+<meta property="og:description" content="Full-Stack • AI • GIS • Civic-Tech. Building technology that creates real-world impact.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2307070d'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='%237c5cff' font-family='monospace' font-weight='700'>LM</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="loader" id="loader"><div class="loader-mark">LM<span>.</span></div><div class="loader-bar"><i></i></div></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo">LM<span>.</span></a>
+  <nav id="links">
+    <a href="#about">About</a>
+    <a href="#impact">Impact</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#journey">Journey</a>
+    <a href="#contact" class="pill">Let's talk</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-in">
+    <div class="badge reveal"><span class="dot"></span> Top 15 Finalist · India Innovates 2026</div>
+    <h1 class="reveal"><span class="hi">Hi, I'm</span> <span class="grad glitch" data-text="Lokesh Magare">Lokesh Magare</span></h1>
+    <p class="typed reveal"><span id="typed"></span><b class="caret"></b></p>
+    <p class="lead reveal">Computer Engineering student at <strong>NMIMS MPSTME, Shirpur</strong>. I turn ideas into products that solve real problems — mixing <em>AI</em>, <em>geospatial systems</em> and modern full-stack engineering for civic impact.</p>
+    <div class="cta reveal">
+      <a href="#projects" class="btn primary magnetic"><span>View my work</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="https://github.com/lokeshm2845" target="_blank" rel="noopener" class="btn ghost magnetic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.2-3.1-.1-.4-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.1 0 4.6-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg><span>GitHub</span></a>
+    </div>
+    <div class="scroll-hint reveal"><i></i> scroll</div>
+  </div>
+  <div class="hero-card reveal" id="heroCard">
+    <div class="term-bar"><i></i><i></i><i></i><span>lokesh.config.ts</span></div>
+    <pre><code><span class="c">// who am i?</span>
+<span class="k">const</span> <span class="v">lokesh</span> = {
+  <span class="p">role</span>:   <span class="s">"Full-Stack + AI Dev"</span>,
+  <span class="p">focus</span>:  [<span class="s">"Civic-Tech"</span>, <span class="s">"GIS"</span>, <span class="s">"GenAI"</span>],
+  <span class="p">team</span>:   <span class="s">"Vertex Victors"</span>,
+  <span class="p">impact</span>: <span class="s">"10,000+ complaints"</span>,
+  <span class="p">goal</span>:   <span class="s">"build things that matter"</span>,
+  <span class="p">status</span>: <span class="s">"shipping 🚀"</span>
+};</code></pre>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>React</span><span>Next.js</span><span>Node.js</span><span>Spring Boot</span><span>PostGIS</span><span>Supabase</span><span>Gemini</span><span>OpenAI</span><span>React Native</span><span>TensorFlow Lite</span><span>Docker</span><span>Firebase</span>
+  <span>React</span><span>Next.js</span><span>Node.js</span><span>Spring Boot</span><span>PostGIS</span><span>Supabase</span><span>Gemini</span><span>OpenAI</span><span>React Native</span><span>TensorFlow Lite</span><span>Docker</span><span>Firebase</span>
+</div></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap two">
+    <div class="reveal">
+      <p class="eyebrow">01 — About</p>
+      <h2>Technology should not only be innovative — <span class="grad">it should create meaningful impact.</span></h2>
+    </div>
+    <div class="reveal about-text">
+      <p>I'm a passionate Computer Engineering student who loves transforming ideas into working products. My work blends modern web technologies, AI, geospatial systems, databases and cloud platforms into practical, impact-driven solutions.</p>
+      <p>From grievance systems that reach the Chief Minister's office to safety platforms for tourists, I enjoy building at the intersection of <strong>AI</strong>, <strong>full-stack development</strong>, <strong>GIS</strong> and <strong>digital governance</strong>.</p>
+      <div class="chips">
+        <span>🌐 Full-Stack</span><span>🤖 AI / ML</span><span>🏛️ Civic-Tech</span><span>🗺️ GIS</span><span>📱 Mobile</span><span>☁️ Cloud</span><span>🧠 System Design</span><span>🏆 Hackathons</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section id="impact">
+  <div class="wrap">
+    <p class="eyebrow reveal">02 — Impact</p>
+    <h2 class="reveal">Numbers from the <span class="grad">real world</span></h2>
+    <div class="stats">
+      <div class="stat reveal tilt"><b data-count="10000" data-suffix="+">0</b><span>Complaints processed across 5 wards of West Delhi</span></div>
+      <div class="stat reveal tilt"><b data-count="77" data-suffix="%">0</b><span>Faster resolution — 14 days down to 3.2 days</span></div>
+      <div class="stat reveal tilt"><b data-count="86" data-suffix="%">0</b><span>Reduction in false complaint closures</span></div>
+      <div class="stat reveal tilt"><b data-count="92" data-suffix="%">0</b><span>Citizen satisfaction reported</span></div>
+      <div class="stat reveal tilt"><b data-count="25000" data-suffix="+">0</b><span>Teams competed with — we placed Top 15</span></div>
+      <div class="stat reveal tilt"><b data-count="47" data-suffix="+">0</b><span>Government departments integrated</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <p class="eyebrow reveal">03 — Projects</p>
+    <h2 class="reveal">Things I've <span class="grad">built & shipped</span></h2>
+
+    <article class="project featured reveal tilt">
+      <div class="p-top"><span class="tag">🥇 National Hackathon · Top 15</span><span class="num">01</span></div>
+      <h3>VikasDrishti</h3>
+      <p class="sub">Hyper-Local Governance Platform</p>
+      <p>Bridges the gap between citizens and leaders through geospatial technology, AI and transparent grievance management — delivering location-specific development information and accountability straight to citizens.</p>
+      <ul class="feat">
+        <li>Gali-level geofencing with street-level precision</li><li>Photo proof &amp; before/after verification</li>
+        <li>Multilingual, AI-powered translation</li><li>Automatic complaint escalation</li>
+        <li>Offline-capable architecture</li><li>Two-way citizen feedback</li>
+      </ul>
+      <div class="stack"><span>React.js</span><span>Supabase</span><span>PostgreSQL</span><span>PostGIS</span><span>Bhashini</span><span>Twilio</span><span>Firebase</span><span>OpenStreetMap</span></div>
+      <div class="links"><a href="https://vikasdrishti.netlify.app/" target="_blank" rel="noopener" class="btn primary sm">Live demo ↗</a><a href="https://github.com/lokeshm2845/VikasDrishti" target="_blank" rel="noopener" class="btn ghost sm">GitHub</a></div>
+    </article>
+
+    <div class="grid">
+      <article class="project reveal tilt">
+        <div class="p-top"><span class="tag">🏛️ Governance</span><span class="num">02</span></div>
+        <h3>CM Grievance Dashboard</h3>
+        <p class="sub">AI-powered redressal command center</p>
+        <p>Centralized monitoring and accountability across 47+ departments with automated routing, GPS-based validation, re-inspection workflows, AI chatbot and live geographic heatmaps.</p>
+        <div class="stack"><span>React</span><span>Material UI</span><span>Supabase</span><span>PostGIS</span><span>OpenAI</span><span>Gemini</span></div>
+        <div class="links"><a href="https://cm-dashboard-blond.vercel.app/track" target="_blank" rel="noopener" class="btn primary sm">Live demo ↗</a><a href="https://github.com/lokeshm2845/CM_dashboard" target="_blank" rel="noopener" class="btn ghost sm">GitHub</a></div>
+      </article>
+
+      <article class="project reveal tilt">
+        <div class="p-top"><span class="tag">🛡️ GDG Hackathon</span><span class="num">03</span></div>
+        <h3>ORION</h3>
+        <p class="sub">Real-time tourist safety system</p>
+        <p>GIS-based safety and emergency response platform with live location monitoring, geofenced safety zones, predictive analysis and low-latency emergency alerts.</p>
+        <div class="stack"><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>GIS</span><span>AI/ML</span></div>
+        <div class="links"><a href="https://smart-tourist-safety-six.vercel.app/" target="_blank" rel="noopener" class="btn primary sm">Live demo ↗</a><a href="https://github.com/lokeshm2845/smart-tourist-safety" target="_blank" rel="noopener" class="btn ghost sm">GitHub</a></div>
+      </article>
+
+      <article class="project reveal tilt">
+        <div class="p-top"><span class="tag">🤖 AI App</span><span class="num">04</span></div>
+        <h3>LokAI</h3>
+        <p class="sub">Personal AI assistant</p>
+        <p>Full-stack mobile assistant pairing a React Native interface with an Express backend and the OpenAI API — REST integration, env-based configuration and clean frontend–backend wiring.</p>
+        <div class="stack"><span>React Native</span><span>Expo</span><span>Node.js</span><span>Express</span><span>OpenAI</span></div>
+        <div class="links"><a href="https://github.com/lokeshm2845" target="_blank" rel="noopener" class="btn ghost sm">GitHub</a></div>
+      </article>
+
+      <article class="project reveal tilt">
+        <div class="p-top"><span class="tag">📱 Mobile</span><span class="num">05</span></div>
+        <h3>Android Apps</h3>
+        <p class="sub">Native Java development</p>
+        <p>A collection of native Android apps — calculator, multi-activity flows, image-based interfaces, validated forms and radio-button UIs — built to master the Android SDK.</p>
+        <div class="stack"><span>Java</span><span>Android Studio</span><span>XML</span><span>Android SDK</span></div>
+        <div class="links"><a href="https://github.com/lokeshm2845" target="_blank" rel="noopener" class="btn ghost sm">GitHub</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <p class="eyebrow reveal">04 — Toolkit</p>
+    <h2 class="reveal">Tech I <span class="grad">work with</span></h2>
+    <div class="skills">
+      <div class="skill reveal tilt"><h4>🌐 Frontend</h4><div class="stack"><span>React.js</span><span>Next.js</span><span>React Native</span><span>Expo</span><span>Material UI</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div></div>
+      <div class="skill reveal tilt"><h4>⚙️ Backend</h4><div class="stack"><span>Node.js</span><span>Express.js</span><span>Spring Boot</span><span>REST APIs</span><span>Auth &amp; AuthZ</span><span>Architecture</span></div></div>
+      <div class="skill reveal tilt"><h4>🗄️ Databases</h4><div class="stack"><span>PostgreSQL</span><span>PostGIS</span><span>MySQL</span><span>SQLite</span><span>Supabase</span><span>SQL</span></div></div>
+      <div class="skill reveal tilt"><h4>🤖 AI / ML</h4><div class="stack"><span>Google Gemini</span><span>OpenAI GPT</span><span>TensorFlow Lite</span><span>Bhashini</span><span>NLP</span><span>On-device AI</span><span>Predictive analytics</span></div></div>
+      <div class="skill reveal tilt"><h4>🗺️ Geospatial</h4><div class="stack"><span>GIS</span><span>PostGIS</span><span>Geofencing</span><span>OpenStreetMap</span><span>Heatmaps</span><span>Location services</span></div></div>
+      <div class="skill reveal tilt"><h4>☁️ Tools &amp; Cloud</h4><div class="stack"><span>Git &amp; GitHub</span><span>Docker</span><span>Vercel</span><span>Netlify</span><span>Firebase</span><span>Twilio</span><span>Android Studio</span><span>VS Code</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey">
+  <div class="wrap">
+    <p class="eyebrow reveal">05 — Journey</p>
+    <h2 class="reveal">Hackathons &amp; <span class="grad">milestones</span></h2>
+    <div class="timeline">
+      <div class="tl reveal"><i></i><div><h4>India Innovates 2026</h4><p>Top 15 finalist, selected among 25,000+ teams.</p></div></div>
+      <div class="tl reveal"><i></i><div><h4>Delhi 2.0 Summer Camp</h4><p>Presented VikasDrishti at the Delhi Secretariat's CM Office.</p></div></div>
+      <div class="tl reveal"><i></i><div><h4>Guinness World Record Hackathon</h4><p>Part of the largest hackathon under one roof.</p></div></div>
+      <div class="tl reveal"><i></i><div><h4>iQOO Hackathon 2026</h4><p>Participant — Pune City Battle.</p></div></div>
+      <div class="tl reveal"><i></i><div><h4>Prasunethon 2.0</h4><p>Shortlisted for Round 2.</p></div></div>
+      <div class="tl reveal"><i></i><div><h4>ORION — GDG Hackathon</h4><p>Built an AI + GIS tourist safety platform.</p></div></div>
+    </div>
+    <div class="learn reveal">
+      <h4>Currently levelling up</h4>
+      <div class="chips"><span>Generative AI</span><span>Advanced ML</span><span>System Design</span><span>DSA</span><span>Cloud &amp; Deployment</span><span>Advanced Geospatial</span><span>Cybersecurity</span><span>Advanced Mobile</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap center">
+    <p class="eyebrow reveal">06 — Contact</p>
+    <h2 class="big reveal">Let's build something <span class="grad">that matters.</span></h2>
+    <p class="lead reveal">Open to opportunities in AI/ML engineering, full-stack and software engineering, civic-tech and geospatial — and to collaborating on hackathons and research.</p>
+    <div class="cta reveal" style="justify-content:center">
+      <a href="https://www.linkedin.com/in/lokeshmagare" target="_blank" rel="noopener" class="btn primary magnetic" id="linkedin"><span>Connect on LinkedIn</span></a>
+      <a href="https://github.com/lokeshm2845" target="_blank" rel="noopener" class="btn ghost magnetic"><span>Follow on GitHub</span></a>
+    </div>
+    <p class="philo reveal">Learn → Build → Experiment → Fail → Improve → <b>Ship</b> 🚀</p>
+  </div>
+</section>
+</main>
+
+<footer><p>© <span id="yr"></span> Lokesh Magare · Team Vertex Victors · Built with ♥ and a lot of coffee</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
