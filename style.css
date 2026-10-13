@@ -143,6 +143,12 @@ h2.big{font-size:clamp(36px,6vw,74px);margin-inline:auto}
 
 /* contact */
 .center{text-align:center}.center .lead{margin:0 auto}
+.reach{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:48px}
+.reach-card{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:280px;padding:24px 30px;border:1px solid var(--line);border-radius:18px;background:var(--card);backdrop-filter:blur(10px);position:relative;overflow:hidden;transition:border-color .3s}
+.reach-card::before{content:"";position:absolute;inset:0;background:radial-gradient(320px circle at var(--mx,50%) var(--my,0%),rgba(124,92,255,.18),transparent 45%);opacity:0;transition:opacity .3s;pointer-events:none}
+.reach-card:hover{border-color:rgba(124,92,255,.5)}.reach-card:hover::before{opacity:1}
+.reach-card .ico{font-size:26px}.reach-card small{color:var(--mut);font:12px 'JetBrains Mono';letter-spacing:.1em;text-transform:uppercase}
+.reach-card b{font:600 18px 'Space Grotesk'}
 .philo{margin-top:60px;font:500 15px 'JetBrains Mono';color:var(--mut)}.philo b{color:var(--b)}
 footer{border-top:1px solid var(--line);text-align:center;padding:30px 20px;color:var(--mut);font-size:14px}
 
