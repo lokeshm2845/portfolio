@@ -21,6 +21,8 @@ ul{list-style:none}
 
 .loader{position:fixed;inset:0;background:var(--bg);z-index:999;display:grid;place-content:center;gap:18px;justify-items:center;transition:opacity .6s .2s,visibility .6s .2s}
 .loader.done{opacity:0;visibility:hidden}
+.loader-avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;object-view-box:inset(19% 24% 43% 26%);border:3px solid transparent;background:var(--grad) border-box;box-shadow:0 0 40px -6px var(--a);animation:pop .7s cubic-bezier(.2,.9,.3,1.4) both}
+@keyframes pop{from{transform:scale(.4);opacity:0}}
 .loader-mark{font:700 54px 'Space Grotesk';letter-spacing:-2px}.loader-mark span{color:var(--a)}
 .loader-bar{width:160px;height:3px;background:var(--line);border-radius:3px;overflow:hidden}
 .loader-bar i{display:block;height:100%;width:0;background:var(--grad);animation:load 1s forwards}
@@ -35,6 +37,9 @@ ul{list-style:none}
 
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:16px clamp(20px,5vw,64px);transition:.35s}
 .nav.stuck{background:rgba(7,7,13,.72);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:12px;position:relative;z-index:2}
+.avatar{width:44px;height:44px;border-radius:50%;object-fit:cover;object-view-box:inset(19% 24% 43% 26%);border:2px solid transparent;background:var(--grad) border-box;box-shadow:0 0 0 3px rgba(124,92,255,.25),0 8px 24px -6px var(--a);transition:transform .3s}
+.brand:hover .avatar{transform:scale(1.1) rotate(-4deg)}
 .logo{font:700 26px 'Space Grotesk';letter-spacing:-1px}.logo span{color:var(--a)}
 .nav nav{display:flex;gap:30px;align-items:center;font-size:14.5px;color:var(--mut)}
 .nav nav a{position:relative;transition:color .2s}
@@ -101,13 +106,7 @@ h2.big{font-size:clamp(36px,6vw,74px);margin-inline:auto}
 .chips span{padding:8px 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);font-size:14px;transition:.25s}
 .chips span:hover{border-color:var(--a);transform:translateY(-3px);background:rgba(124,92,255,.12)}
 
-.photo{margin-top:40px;max-width:420px;position:relative;padding:10px;border-radius:26px;background:var(--grad);box-shadow:0 30px 80px -30px var(--a);transition:transform .25s}
-.photo::before{content:"";position:absolute;inset:-14px;border-radius:34px;border:1px dashed rgba(124,92,255,.4);animation:spin-b 8s ease-in-out infinite alternate;pointer-events:none}
-@keyframes spin-b{to{transform:rotate(2deg) scale(1.02)}}
-.photo-in{border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:var(--bg2)}
-.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block;transition:transform .8s}
-.photo:hover img{transform:scale(1.05)}
-.photo figcaption{position:absolute;left:22px;bottom:22px;display:flex;align-items:center;gap:9px;padding:7px 14px;border-radius:99px;background:rgba(7,7,13,.72);backdrop-filter:blur(10px);font:12px 'JetBrains Mono';color:var(--tx)}
+
 
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
