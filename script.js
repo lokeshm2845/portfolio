@@ -116,4 +116,14 @@
   })();
 
   console.log('%cHey 👋 curious dev!', 'font:700 18px monospace;color:#7c5cff', '\nLet\'s build something that matters → github.com/lokeshm2845');
+
+  /* profile modal */
+  const modal = $('#profile'), pbtn = $('#profileBtn');
+  const setModal = (open) => {
+    modal.classList.toggle('open', open); document.body.classList.toggle('lock', open);
+    if (open) $('.modal-x', modal).focus(); else pbtn.focus();
+  };
+  pbtn.addEventListener('click', () => setModal(true));
+  $$('[data-close]', modal).forEach((n) => n.addEventListener('click', () => setModal(false)));
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('open')) setModal(false); });
 })();

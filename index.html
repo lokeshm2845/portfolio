@@ -24,7 +24,7 @@
 <div class="progress" id="progress"></div>
 
 <header class="nav" id="nav">
-  <a href="#home" class="brand"><img class="avatar" src="assets/lokesh.jpg" alt="Lokesh Magare" width="44" height="44"><span class="logo">LM<span>.</span></span></a>
+  <div class="brand"><button class="avatar-btn" id="profileBtn" aria-label="View profile" aria-haspopup="dialog"><img class="avatar" src="assets/lokesh.jpg" alt="Lokesh Magare" width="44" height="44"></button><a href="#home" class="logo">LM<span>.</span></a></div>
   <nav id="links">
     <a href="#about">About</a>
     <a href="#impact">Impact</a>
@@ -219,6 +219,27 @@
 </main>
 
 <footer><p>© <span id="yr"></span> Lokesh Magare · Team Vertex Victors · Built with ♥ and a lot of coffee</p></footer>
+
+<div class="modal" id="profile" role="dialog" aria-modal="true" aria-labelledby="pName" hidden>
+  <div class="modal-bg" data-close></div>
+  <div class="modal-card">
+    <button class="modal-x" data-close aria-label="Close">✕</button>
+    <div class="m-photo"><img src="assets/lokesh.jpg" alt="Lokesh Magare" width="960" height="1280"></div>
+    <div class="m-info">
+      <p class="eyebrow">Hello, I'm</p>
+      <h3 id="pName">Lokesh Magare</h3>
+      <p class="m-role">Full-Stack Developer · AI Enthusiast · Civic-Tech Builder</p>
+      <p class="m-sum">Computer Engineering student at NMIMS MPSTME, Shirpur, building AI-powered, geospatial and full-stack products for real-world impact. Top 15 finalist at India Innovates 2026 (25,000+ teams) and presenter at the Delhi CM's Office; my governance platform processed 10,000+ citizen complaints and cut resolution time from 14 days to 3.2. Open to AI/ML, full-stack and software engineering roles.</p>
+      <ul class="m-contact">
+        <li><span>✉️</span><a href="mailto:lokeshmagare28@gmail.com">lokeshmagare28@gmail.com</a></li>
+        <li><span>📞</span><a href="tel:+919834260897">+91 98342 60897</a></li>
+        <li><span>🎓</span>B.Tech Computer Engineering, NMIMS MPSTME</li>
+        <li><span>👥</span>Team Vertex Victors</li>
+      </ul>
+      <div class="m-links"><a href="https://github.com/lokeshm2845" target="_blank" rel="noopener" class="btn ghost sm">GitHub</a><a href="https://www.linkedin.com/in/lokeshmagare" target="_blank" rel="noopener" class="btn primary sm">LinkedIn</a></div>
+    </div>
+  </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
