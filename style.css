@@ -101,6 +101,14 @@ h2.big{font-size:clamp(36px,6vw,74px);margin-inline:auto}
 .chips span{padding:8px 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);font-size:14px;transition:.25s}
 .chips span:hover{border-color:var(--a);transform:translateY(-3px);background:rgba(124,92,255,.12)}
 
+.photo{margin-top:40px;max-width:420px;position:relative;padding:10px;border-radius:26px;background:var(--grad);box-shadow:0 30px 80px -30px var(--a);transition:transform .25s}
+.photo::before{content:"";position:absolute;inset:-14px;border-radius:34px;border:1px dashed rgba(124,92,255,.4);animation:spin-b 8s ease-in-out infinite alternate;pointer-events:none}
+@keyframes spin-b{to{transform:rotate(2deg) scale(1.02)}}
+.photo-in{border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:var(--bg2)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block;transition:transform .8s}
+.photo:hover img{transform:scale(1.05)}
+.photo figcaption{position:absolute;left:22px;bottom:22px;display:flex;align-items:center;gap:9px;padding:7px 14px;border-radius:99px;background:rgba(7,7,13,.72);backdrop-filter:blur(10px);font:12px 'JetBrains Mono';color:var(--tx)}
+
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .stat,.skill,.project{border:1px solid var(--line);border-radius:20px;background:var(--card);backdrop-filter:blur(10px);padding:30px;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
